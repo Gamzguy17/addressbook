@@ -3,3 +3,11 @@ install:
 - mvn install
 jdk:
 - oraclejdk8
+deploy:
+  provider: heroku
+  api_key:
+    secure: lE/DqBD3eeSLc9Go000zjC3zqHbGgOrLHwE4/QBoPppVhKQnei3I3oKCdjhI5FrqkgDRVYCpCParHvy/gjUP1tRqKn9ideUOYpUoXRkz2pzOOfuPWXYVkTfyfRu/rcUT+mfHThoQPikkTFCTW/Hgt/zE6yoSquTQnN3kynnKYUmyPNChB8TOOZo2b6GBS/GbYNW918hFSAEfHxT4W07W/sZw12g6ykCGvUn+6rr2xjXeEUQQaVDVndaQDSu7xRltC6ndgEuEAER0voG8ac3+LRZUU1tBOa7GgiN8sD042Wy2a+9uTs1uEDOb2GRB50RZ6qkan7JrcaPstdJjzfHqrC79TD76zd9NDH1aqEnzluY0iSYGI23XrCCZpma9iNVdI0t2O0Kvm/GdX8nEfrhGhy//i6SSFZU4h1/9BKm2gHRxKS6EtdQj0itSOb0JsxOvhvPSRN5xduR5gCbi82nmKlU8ycnalGcYssnU8t0a7ldV86ErFAqzQPeYOznRMlCqbzC2qMdxJHv4+cKOKerK7SCvprMSRcEkl7aOtiDQ99nvx9jKwyJmpDRxcoD7SFCh1pCIezkVz2R+fYkRYiRqLeD8gsc3t8t7nSpSY+0Uj+YzFDlKG09PbLWQrb6u+Oy2yBdDgEXi8kStnGICUhCx+2ZWmtH/DG6pkileyQO5D0I=
+  app: gwarr-addressbook
+  on:
+    repo: Gamzguy17/addressbook
+    branch: todo_tasks
